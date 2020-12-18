@@ -39,9 +39,9 @@ module.exports = merge(common, {
         loader: 'html-loader',
       },
       {
-        test: /\.js$/,
+       /* test: /\.js$/,
         include: Path.resolve(__dirname, '../src'),
-        loader: 'babel-loader',
+        loader: 'babel-loader',*/
       },
       {
         test: /\.s?css$/i,
