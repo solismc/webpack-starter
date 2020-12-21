@@ -59,4 +59,68 @@ for (let i=0; i<5; i++) {
   year -= age;
   console.log('You were born in ' + year);
 
+//Functions and Scope//
 
+function startCar(carId) {
+  let message = 'Starting...';
+  let startFn = function turnkey() {
+    let message = 'Override';
+  };
+  startFn();
+  console.log(message);
+}
+startCar(123);
+//Override is not displayed because it is out of scope. console.log is outside the nested curly braces.//
+
+//Block Scope// -- Only Applies to LET, not to VAR
+
+let message = 'Outside';
+if (5 === 5) {
+  let message = 'Equal';
+  console.log(message);
+}
+console.log(message);
+
+//IIFE Example//
+
+/*let app = (function() {
+  let carId = 123;
+  console.log('in function');
+  return {};
+})();
+console.log(app);*/
+
+//Closure Example//
+
+let app = (function() {
+  let carId = 123;
+  let getId = function() {
+    return carId;
+  };
+  return {
+    getId: getId
+  };
+}) ();
+console.log(app.getId() );
+
+//This keyword// - usually applies to objects
+
+/*let o = {
+  carId: 123,
+  getId: function() {
+    console.log(this);
+    return this.carId;
+  }
+};
+console.log(o.getId());*/
+
+//Call and Apply Examples//
+
+let o = {
+  carId: 123,
+  getId: function(prefix) {
+    return prefix + this.carId;
+  }
+};
+let newCar = { carId: 456 };
+console.log( o.getId.apply(newCar, ['ID: ']));
