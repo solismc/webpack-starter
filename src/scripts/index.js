@@ -29,9 +29,10 @@ for (let i=0; i<5; i++) {
   console.log(1 === true);
 
 
-  let year = 1967;
+  /*let year = 1967;
   console.log(year++);
   console.log(year);
+  */
 
   if (5 === 5 && 6 === 6) {
     console.log(true);
@@ -51,3 +52,11 @@ for (let i=0; i<5; i++) {
   }
 
   console.log( (5 > 6) ? 'yes' : 'no' );
+
+  let year = 2020;
+  let age = 21;
+  console.log (year);
+  year -= age;
+  console.log('You were born in ' + year);
+
+
