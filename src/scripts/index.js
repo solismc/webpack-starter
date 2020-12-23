@@ -127,14 +127,25 @@ console.log( o.getId.apply(newCar, ['ID: ']));
 
 //Constructor Functions//
 
-function Car(id) {
+/*function Car(id) {
   this.carId = id;
 }
 
 let car = new Car(123);
 console.log( car.carId); //should log out 123//
+*/
 
 //Method//
+
+function Car(id) {
+  this.carId = id;
+  this.start = function() {
+    console.log('start: ' + this.carId);
+  };
+}
+
+let vehicle = new Car(123);
+vehicle.start();
 
 
 
