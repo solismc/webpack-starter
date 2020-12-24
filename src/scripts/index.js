@@ -137,7 +137,7 @@ console.log( car.carId); //should log out 123//
 
 //Method//
 
-function Car(id) {
+/*function Car(id) {
   this.carId = id;
   this.start = function() {
     console.log('start: ' + this.carId);
@@ -145,7 +145,20 @@ function Car(id) {
 }
 
 let vehicle = new Car(123);
-vehicle.start();
+vehicle.start(); */
+
+//Array Iteration//
+
+let carIds = [
+  { carId: 123, style: 'sedan'},
+  { carId: 456, style: 'convertible'},
+  { carId: 789, style: 'sedan'}
+];
+
+carIds.forEach( car => console.log( car ));
+carIds.forEach(
+  (car,index) => console.log( car, index));
+
 
 
 
