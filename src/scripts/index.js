@@ -178,7 +178,7 @@ console.log( car.id);*/
 
 //Methods
 
-class Car {
+/*class Car {
   constructor(id) {
     this.id = id;
   }
@@ -187,4 +187,23 @@ class Car {
   }
 }
 let car = new Car(123);
-console.log( car.identify('!!!'));
+console.log( car.identify('!!!'));*/
+
+//Inheritance
+
+class Vehicle {
+  constructor() {
+    this.type = 'car';
+  }
+  start() {
+    return `Starting: ${this.type}`;
+  }
+}
+
+class Car extends Vehicle {
+    start() {
+      return 'in Car start ' + super.start();
+    }
+}
+let car = new Car();
+console.log( car.start() );
