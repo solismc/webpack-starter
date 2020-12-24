@@ -147,7 +147,7 @@ console.log( car.carId); //should log out 123//
 let vehicle = new Car(123);
 vehicle.start(); */
 
-//Array Iteration//
+//Array Iteration// Filter, forEach
 
 let carIds = [
   { carId: 123, style: 'sedan'},
@@ -155,9 +155,14 @@ let carIds = [
   { carId: 789, style: 'sedan'}
 ];
 
-carIds.forEach( car => console.log( car ));
+let convertibles = carIds.filter(
+  car => car.style === 'convertible'
+);
+console.log(convertibles);
+
+/*carIds.forEach( car => console.log( car )); //arrow function//
 carIds.forEach(
-  (car,index) => console.log( car, index));
+  (car,index) => console.log( car, index));*/
 
 
 
