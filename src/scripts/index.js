@@ -116,14 +116,14 @@ console.log(o.getId());*/
 
 //Call and Apply Examples//
 
-let o = {
+/*let o = {
   carId: 123,
   getId: function(prefix) {
     return prefix + this.carId;
   }
 };
 let newCar = { carId: 456 };
-console.log( o.getId.apply(newCar, ['ID: ']));
+console.log( o.getId.apply(newCar, ['ID: ']));*/
 
 //Constructor Functions//
 
@@ -191,7 +191,7 @@ console.log( car.identify('!!!'));*/
 
 //Inheritance
 
-class Vehicle {
+/*class Vehicle {
   constructor() {
     this.type = 'car';
   }
@@ -204,6 +204,12 @@ class Car extends Vehicle {
     start() {
       return 'in Car start ' + super.start();
     }
+}*/
+
+try {
+let car = null;
 }
-let car = new Car();
-console.log( car.start() );
+catch(error) {
+console.log('error: ', error);
+}
+console.log('this always executes');
