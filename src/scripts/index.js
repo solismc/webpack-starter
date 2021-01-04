@@ -232,5 +232,7 @@ let promise = new Promise(
     setTimeout(reject, 100, 'someValue');
   }
 );
-
-console.log(promise);
+promise.then(
+  value => console.log('fulfilled: ' + value),
+  error => console.log('rejected: ' + error)
+);
