@@ -206,10 +206,23 @@ class Car extends Vehicle {
     }
 }*/
 
-try {
+/*try {
 let car = null;
 }
 catch(error) {
 console.log('error: ', error);
 }
-console.log('this always executes');
+console.log('this always executes');*/
+
+try {
+  // code here...
+  throw new Error('my custom error');
+}
+
+catch(error) {
+  console.log('error: ', error);
+
+}
+finally {
+  console.log('this always executes');
+}
