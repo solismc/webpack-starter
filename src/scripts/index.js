@@ -247,12 +247,23 @@ promise.then(
   error => console.log('error: ',error)
 );*/
 
+import $ from 'jquery';
+
 let form = document.getElementById('user-form');
 
 form.addEventListener('submit', event => {
 
   let user = form.elements['user'];
-  let userError = document.getElementById('user-error');
+  let avatarFile = form.elements ['avatar-file'];
+
+  let posting = {
+    user: user.value,
+    avatarFile: avatarFile.value
+  };
+
+  let promise = $.post(
+    
+  )
   
   if (user.value.length < 6) {
   userError.textContent = 'User must be more than 6 characters';
