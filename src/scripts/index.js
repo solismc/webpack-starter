@@ -1,3 +1,4 @@
+import { from } from 'core-js/fn/array';
 import '../styles/index.scss';
 
 /*if (process.env.NODE_ENV === 'development') {
@@ -237,11 +238,22 @@ promise.then(
   error => console.log('rejected: ' + error)
 );*/
 
-import $ from 'jquery';
+/*import $ from 'jquery';
 
 let promise = $.get('http://5b32a4fd82407e001413f1df.mock.api.io/api/v1/users');
 
 promise.then(
   data => console.log('success: ', data),
   error => console.log('error: ',error)
-);
+);*/
+
+let form = document.getElementById('user-form');
+
+form.addEventListener('submit', event => {
+
+  let user = form.elements['user'];
+  let avatarFile = form.elements['avatar-file'];
+
+  console.log(user.value, avatarFile.value);
+  event.preventDefault();
+});
