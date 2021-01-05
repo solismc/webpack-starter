@@ -1,6 +1,6 @@
 import '../styles/index.scss';
 
-if (process.env.NODE_ENV === 'development') {
+/*if (process.env.NODE_ENV === 'development') {
   require('../index.html');
 }
 
@@ -34,7 +34,7 @@ for (let i=0; i<5; i++) {
   console.log(year);
   */
 
-  if (5 === 5 && 6 === 6) {
+  /*if (5 === 5 && 6 === 6) {
     console.log(true);
   }
   else {
@@ -69,12 +69,12 @@ function startCar(carId) {
   startFn();
   console.log(message);
 }
-startCar(123);
+startCar(123);*/
 //Override is not displayed because it is out of scope. console.log is outside the nested curly braces.//
 
 //Block Scope// -- Only Applies to LET, not to VAR
 
-let message = 'Outside';
+/*let message = 'Outside';
 if (5 === 5) {
   let message = 'Equal';
   console.log(message);
@@ -92,7 +92,7 @@ console.log(app);*/
 
 //Closure Example//
 
-let app = (function() {
+/*let app = (function() {
   let carId = 123;
   let getId = function() {
     return carId;
@@ -227,7 +227,7 @@ finally {
   console.log('this always executes');
 }*/
 
-let promise = new Promise(
+/*let promise = new Promise(
   function(resolve, reject) {
     setTimeout(reject, 100, 'someValue');
   }
@@ -235,4 +235,13 @@ let promise = new Promise(
 promise.then(
   value => console.log('fulfilled: ' + value),
   error => console.log('rejected: ' + error)
+);*/
+
+import $ from 'jquery';
+
+let promise = $.get('http://5b32a4fd82407e001413f1df.mock.api.io/api/v1/users');
+
+promise.then(
+  data => console.log('success: ', data),
+  error => console.log('error: ',error)
 );
