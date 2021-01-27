@@ -274,3 +274,21 @@ form.addEventListener('submit', event => {
   event.preventDefault();
   }
 });
+
+//Simple Switch Example//
+
+function simpleSwitch() {
+  let productId = 2;
+
+  switch(productId) {
+    case 1:
+      console.log("product 1");
+      break;
+   case 2:
+     console.log("product 2");
+     break;
+   default:
+     console.log("Unknown Product");
+     break;
+  }
+}
