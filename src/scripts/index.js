@@ -383,3 +383,14 @@ function forgetABreak() {
       console.log(JSON.stringify(item));
     }
   }
+
+  //Labeled Statement - Not recommended for use!!!//
+
+  function labelSample() {
+    even:
+    for (let index = 1; index <= 10; index++) {
+      continue even;
+    }
+    console.log(index);
+  }
+
