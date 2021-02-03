@@ -263,7 +263,7 @@ form.addEventListener('submit', event => {
 
   let promise = $.post(
     
-  )
+  );
   
   if (user.value.length < 6) {
   userError.textContent = 'User must be more than 6 characters';
@@ -294,7 +294,7 @@ function simpleSwitch() {
 }
 //Multiple Case Statements//
 
-function multipleCase() {
+/*function multipleCase() {
   let color = "Red";
 
   switch (color) {
@@ -324,7 +324,7 @@ function forgetABreak() {
   
   switch (productId) {
     case 1:
-      console.log("HL Road Frame - Balck, 58");
+      console.log("HL Road Frame - Black, 58");
       break;
     case 2:
       console.log("Sport-100 Helmet, Red");
@@ -335,4 +335,43 @@ function forgetABreak() {
       console.log("Unknown product");
       break;
       }
+  }*/
+
+  //Break and Continue Statements//
+
+  let _products = [
+    {
+      "productID": 680,
+      "name": "HL Road Frame - Black, 58",
+      "productNumber": "FR-R92B-58",
+      "color": "Black",
+      "standardCost": 1059.31,
+      "listPrice": 1431.50
+    },
+    {
+      "productID": 707,
+      "name": "Sport-100 Helmet, Red",
+      "productNumber": "SO-B909-M",
+      "color": "White",
+      "standardCost": 13.08,
+      "listPrice": 34.99
+    },
+    {
+      "productID": 709,
+      "name": "Mountain Bike Socks, M",
+      "productNumber": "SO-B909-M",
+      "color": "White",
+      "standardCost": 3.3963,
+      "listPrice": 9.50
+    }
+  ];
+
+  function breakSample() {
+    for (const item of _products) {
+      if (item.standardCost < 20) {
+        break;
+      }
+      console.log(JSON.stringify(item));
+    }
   }
+  
