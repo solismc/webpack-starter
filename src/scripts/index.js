@@ -417,4 +417,8 @@ function mathSample() {
   result = price / 2;
   console.log("price * 2 = " + result.toString());
 
+// Exponentiation
+result = price ** 2;
+console.log("price ** 2 = " + result.toString());
+
 }
