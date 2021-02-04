@@ -409,4 +409,9 @@ function mathSample() {
   result = price - 10;
   console.log("price - 10 = " + result.toString());
 
+// Multiplication 
+  result = price * 2;
+  console.log("price * 2 = " + result.toString());
+  
+
 }
