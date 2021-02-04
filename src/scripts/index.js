@@ -431,4 +431,11 @@ console.log("result = price++ = " + result.toString());
 console.log("price = " + result.toString());
 result = ++price;
 console.log("result = ++price = " + result.toString());
+
+// Decrement
+result = price++;
+console.log("result = price-- = " + result.toString());
+console.log("price = " + result.toString());
+result = ++price;
+console.log("result = --price = " + result.toString());
 }
