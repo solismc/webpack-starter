@@ -406,4 +406,7 @@ function mathSample() {
   console.log("price + 100 =" + result.toString());
 
 // Subtraction
+  result = price - 10;
+  console.log("price - 10 = " + result.toString());
+
 }
