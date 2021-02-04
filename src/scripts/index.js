@@ -421,4 +421,14 @@ function mathSample() {
 result = price ** 2;
 console.log("price ** 2 = " + result.toString());
 
+// Modulus
+result = price % 3;
+console.log("price % 3 = " + result.toString());
+
+// Increment
+result = price++;
+console.log("result = price++ = " + result.toString());
+console.log("price = " + result.toString());
+result = ++price;
+console.log("result = ++price = " + result.toString());
 }
