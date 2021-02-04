@@ -394,3 +394,16 @@ function forgetABreak() {
     console.log(index);
   }
 
+// Math and Comparison Operators//
+
+function mathSample() {
+  let price = 200;
+  let result = 0;
+
+  console.log("price = " + price.toString());
+//Addition
+  result = price + 100;
+  console.log("price + 100 =" + result.toString());
+
+// Subtraction
+}
