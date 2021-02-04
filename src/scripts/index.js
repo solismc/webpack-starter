@@ -412,6 +412,9 @@ function mathSample() {
 // Multiplication 
   result = price * 2;
   console.log("price * 2 = " + result.toString());
-  
+
+// Division
+  result = price / 2;
+  console.log("price * 2 = " + result.toString());
 
 }
