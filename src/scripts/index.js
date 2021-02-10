@@ -454,4 +454,7 @@ function assignmentSample() {
   price -= 100;
   console.log("price -= 100 = " +price.toString());
 
+  // Multiplication//
+  price *+ 2;
+  console.log("price *= 2 = " + price.toString());
 }
