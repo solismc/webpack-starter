@@ -461,5 +461,10 @@ function assignmentSample() {
   // Division //
   price /= 2;
   console.log("price /= 2 = " + price.toString());
+
+  // Exponentiation //
+  price **= 2;
+  console.log("price **= 2 = " +price.toString());
+
   
 } 
