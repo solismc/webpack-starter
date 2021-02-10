@@ -466,5 +466,8 @@ function assignmentSample() {
   price **= 2;
   console.log("price **= 2 = " +price.toString());
 
-  
+  // Modulus //
+  price %= 3;
+  console.log("price %= 3 = " + price.toString());
+
 } 
