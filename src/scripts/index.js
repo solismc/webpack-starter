@@ -439,3 +439,17 @@ console.log("price = " + result.toString());
 result = ++price;
 console.log("result = --price = " + result.toString());
 }
+
+//Assignment Operators//
+
+function assignmentSample() {
+  let price = 200;
+  console.log("price = " + price.toString());
+
+  //Addition//
+  price += 100;
+  console.log("price += 100 = " + price.toString());
+
+  
+
+}
