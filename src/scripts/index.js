@@ -440,21 +440,26 @@ result = ++price;
 console.log("result = --price = " + result.toString());
 }
 
-//Assignment Operators//
+// Assignment Operators //
 
 function assignmentSample() {
   let price = 200;
   console.log("price = " + price.toString());
 
-  //Addition//
+  // Addition //
   price += 100;
   console.log("price += 100 = " + price.toString());
 
-  //Subtraction//
+  // Subtraction //
   price -= 100;
   console.log("price -= 100 = " +price.toString());
 
   // Multiplication//
   price *+ 2;
   console.log("price *= 2 = " + price.toString());
-}
+
+  // Division //
+  price /= 2;
+  console.log("price /= 2 = " + price.toString());
+  
+} 
