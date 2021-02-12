@@ -471,3 +471,22 @@ function assignmentSample() {
   console.log("price %= 3 = " + price.toString());
 
 } 
+
+// Comparison Operators //
+
+function comparisonSample() {
+  let price = 200;
+  let result = 0;
+
+  console.log("price = " + price.toString());
+  console.log("");
+  
+  // Equal to //
+  console.log("price == price = " + (price == price) .toString());
+
+  // Equal to
+  result = price.toString();
+  console.log("price(number) == result(string) = " + (price == result.toString));
+  console.log("");
+  
+}
