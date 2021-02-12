@@ -519,11 +519,8 @@ function comparisonSample() {
 
   // Less than or equal to
   console.log("price <= price + " + (price <= price).toString());
-
   
-  }
-  
-
-
-
+  // Ternary
+  result = price < 1500 ? "'less than 1500'" : "'greater than 1500'";
+  console.log("ternary = " + result); 
 }
