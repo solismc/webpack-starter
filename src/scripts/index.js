@@ -490,6 +490,7 @@ function comparisonSample() {
 
   // Equal to/ Equal Type
   result = price;
-  console.log("price(number) === result(number) = " + (price === result).toString
-  
+  console.log("price(number) === result(number) = " + (price === result).toString);
+  console.log("");
+
   }
