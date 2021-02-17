@@ -524,3 +524,28 @@ function comparisonSample() {
   result = price < 1500 ? "'less than 1500'" : "'greater than 1500'";
   console.log("ternary = " + result); 
 }
+
+// The Effect of 'use strict' //
+
+function useStrictSample() {
+  'use strict'; //If you comment out this line, the code below will work.
+  /* When commented out, it allows the use of an undeclared variable. 
+  It will make it a global variable */
+
+// Can't use a variable without 'var' or 'let' keyword //
+result = 10;
+console.log(result);
+
+/* Other exceptions:
+Can't use reserved words as variables. For example, eval
+let eval = 10;
+let arguments = "some args";
+
+Can't delete a variable
+delete result;
+
+Can't Delete a function
+delete useStrictSample;
+*/
+
+}
