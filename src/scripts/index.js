@@ -563,4 +563,27 @@ function trueFalseSample() {
   if(price > 10) {
     console.log("Price is > 10");
   }
+
+  // Check if price is something other than zero
+  if(price) {
+    console.log("PRice is > 0");
+  }
+  // check if color has characters in it
+  if(color) {
+    console.log("color has a value");
+  }
+
+  // Set value to null, it becomes false
+  color = null;
+  console.log("color == null = " + Boolean(color));
+
+  // Set value to an empty string, it becomes false
+  color = "";
+  console.log("color == '' = " + Boolean(color));
+
+  // Set value to undefined, it becomes false
+  color = undefined;
+  console.log("color == undefined = " + Boolean(color));
+
+  // Declare a variable and don't initialize, it is false
 }
