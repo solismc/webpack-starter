@@ -547,5 +547,20 @@ delete result;
 Can't Delete a function
 delete useStrictSample;
 */
+}
 
+// Logical Operators //
+
+function trueFalseSample() {
+  let price = 200;
+  let color = "Red";
+  let result;
+
+  console.log("Check for 'true' values"); //evaluate the expression
+  result = price > 10;
+  console.log(result);
+  // Test the expression
+  if(price > 10) {
+    console.log("Price is > 10");
+  }
 }
